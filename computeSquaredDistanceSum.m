@@ -15,4 +15,3 @@ for i = 1:numPoints
     squaredDistanceSum = squaredDistanceSum + ithDistance.^2;
 end
 end
-
