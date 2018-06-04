@@ -1,2 +1,2 @@
 # GroundRobots
-This is code for Ground Robots for Autonomous Coverage of Designated Areas
+This repo contains code of Ground Robots.
