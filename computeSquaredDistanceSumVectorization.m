@@ -15,7 +15,3 @@ point2Origin = sqrt((points(:, 1) - origin(1)).^2 + (points(:, 2) - origin(2).^2
 distance = point2Origin.*sin(beta);
 squaredDistanceSum = sum(distance.^2);
 end
-
-
-
-
