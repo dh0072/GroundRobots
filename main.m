@@ -3,7 +3,7 @@ clc;  % clear command window
 clear;  % clear workspace variables 
 
 % Compute the squared distance of ith point to a line, which starts from
-% origin and the anle with axis is denoted as theta
+% origin and the angle with axis is denoted as theta
 origin = [0, 0];
 points = [[2, 0]; [1, 1]];
 theta = pi/2;
