@@ -10,8 +10,14 @@ function squaredDistanceSum = computeSquaredDistanceSumVectorization(origin, poi
 % atan2([2, 3], [1, 0]) <==> [atan2(2, 1), atan2(3, 0)]
 
 alpha = atan2(points(:, 2) - origin(2), points(:, 1) - origin(1));
+indices = find(points(:, 2) - origin(2) < 0);
+alpha(indices) = alpha(indices) + 2 * pi;
 beta = theta - alpha;
-point2Origin = sqrt((points(:, 1) - origin(1)).^2 + (points(:, 2) - origin(2).^2));
-distance = point2Origin.*sin(beta);
+point2Origin = sqrt((points(:, 1) - origin(1)) .^ 2 + (points(:, 2) - origin(2)) .^ 2);
+distance = point2Origin .* sin(beta);
 squaredDistanceSum = sum(distance.^2);
 end
+
+
+
+

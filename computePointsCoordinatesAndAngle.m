@@ -1,4 +1,4 @@
-function [points, angle] = computePointsCoordinatesAndAngle(origin, startPoint, d, r)
+function points = computePointsCoordinatesAndAngle(origin, startPoint, d, r)
 %Given a circle locates at origin with radius r, return a list of points on
 %the circle that starts from startPoint, and the distance between each point
 %is d
@@ -17,6 +17,6 @@ for i = 2:numPoints
     angle(i - 1) = atan2(points(i, 2) - points(i - 1, 2), points(i, 1) - points(i - 1, 1));
 end
 % the angle for last point is computed against first point
-angle(i) = atan2(startPoint(2) - points(i, 2), startPoint(1) - points(i, 1));
+% angle(i) = atan2(startPoint(2) - points(i, 2), startPoint(1) - points(i, 1));
 
 end
