@@ -2,7 +2,6 @@
 This repo contains code of Ground Robots.
 # Introduction
 This project aims to enable ground robots autonomously cover a designated area. Ground robots are expected to generate an optimal path to cover a designated outdoor area without missing any parts, while avoiding people, pets, and obstacles in the area. Therefore, artificial intelligent approaches and algorithms for autonomous coverage of designated areas, and robotic obstacle avoidance methods are needed.
-![Screenshot]\(https://github.com/dh0072/GroundRobots/blob/master/pictures/Fig.1%20Experimental%20robot.jpg) 
 # Result
 Intelligent approaches and algorithms are designed for autonomous coverage of designated areas, and robotic obstacle avoidance methods. By using Matlab, the experimental robot is now able to recognize a designated area's boundary and the obstacles inside it. Aside from that, it will autonomously plan and successfully execute the motion of the robot for complete coverage, while avoiding obstacles.
 # Impact
